@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<!--
+    Author: Noor Zena
+    Id: 60105071
+-->   
+<html lang="en">
+    <head>
+        <meta charset="utf-8"/>
+        <title>Smug</title>
+        <link rel="icon" href="../images/nlogo.png">
+        <link href="../css/reset.css" rel="stylesheet" type="text/css"/>
+        <link href="../css/layout.css" rel="stylesheet" type="text/css"/>
+        <link href="../css/styles.css" rel="stylesheet" type="text/css"/>
+        <script type="text/javascript" src="../JS/validation.js" ></script>
+    </head>
+
+    <body>
+
+        <header id="header">
+            <img src="../images/nlogo.png" alt="logo"/>
+            <h1></h1>
+            <img src="../images/II.png" alt="h" id="slogan"> 
+         </header>
+
+         <nav id="nav">
+            <ul>
+               <li><a href="../index.html">HOME</a></li>
+               <li><a href="products.html">PRODUCTS</a></li>
+               <li><a href="contact.html">CONTACT</a></li>
+               <li><a href="subscribe.html">SUBSCRIBE</a></li>
+            </ul>
+         </nav>
+
+         <!--forms-->
+         <form onsubmit="return validateForm();" action="https://sit.cna-qatar.edu.qa/processform.php" method="POST">
+
+            <h1>Sign In</h1>
+            
+            <div class="credits">
+               
+               <!--full name-->
+               <label for="fullname">Full Name:</label>
+               <input type="text" id="FN" name="Fname" placeholder="" onblur = "validateField('Fname')">
+
+               <!--username-->
+               <label for="username">User Name:</label>
+               <input type="text" id="username" name="username" placeholder="" onblur = "validateField('username')">
+
+               <!--password-->
+               <label for="pass">Password:</label>
+               <input type="password" id="pass" name="pass" placeholder="" style="width: 510px" onblur = "validatePassword();">
+               <span id="passError"></span>
+               <!-- <label for="showPass">show password</label> -->
+               <input name="showPass" id="showPass" value="" type="checkbox" style="width: 30px" onclick="showPass('showPass')"/>
+               
+               <!--password confirmation-->
+               <label for="passCon">Password Confirm:</label>
+               <input type="password" id="passCon" name="passCon" placeholder=""  style="width: 510px" onblur="passCon();">
+               <span id="passError2"></span>
+               <!-- <label for="showPass">show password</label> -->
+               <input name="showPass" id="showPass" value="" type="checkbox" style="width: 30px" onclick="showPass('showPass')" /> 
+               
+               <!--email-->
+               <label for="email">Email:</label>
+               <input type="email" id="email" name="email" placeholder=""  onblur="validateEmail()">
+               <span id="emailError"></span>
+
+               <!--email confirmation-->
+               <label for="emailCon">Email Confirm:</label>
+               <input type="email" id="emailCon" name="emailCon" placeholder=""  onblur="emailCon()" >
+               <span id="emailError2"></span>
+
+               <!--phone number-->
+               <label for="phonenumber">Phone Number:</label>
+               <input type="tel" id="Phone" name="phone" placeholder="" value="" onblur="validatePhone()">
+               <span id="numError"></span>
+
+               <!--date of birth-->
+               <label for="DOB">Date Of Birth:</label>
+               <input type="date" id="dob" name="DOB" placeholder="" onblur="validateDOB()">
+
+               <!--age-->
+               <label for="age">Age:</label>
+               <input type="number" id="age" name="Age" placeholder="" onblur="validateAge()">
+               <span id="ageError"></span>
+
+            </div>
+            
+            <h1>Shipping Address</h1>
+
+            <div class="shipping">
+               <label for="bldng">Buliding Number</label>
+               <input type="number" id="bldng" name="bldng" placeholder="" onblur="buildNum()"/>
+               <span id="bError"></span>>
+
+               <label for="streetname"> Street Name</label>
+               <input type="text" id="streetname" name="streetname" placeholder="" onblur="validateField('streetname');"/>
+               
+               <label for="cityname">City Name</label>
+               <select name="cityname" id="cityname">
+                  <option value="Doha" selected>Doha</option>
+                  <option value="Al Rayyan">Al Rayyan</option>
+                  <option value="Ain Khaild">Ain Khalid</option>
+                  <option value="Al Dafna">Al Dafna</option>
+                  <option value="Lusail">Lusail</option>
+               </select>
+
+               <label for="subscribetoNS">Would you like to subscribe to our news letter?</label>
+               <input type="checkbox" id="subscribetoNS" name="subscribetoNS" placeholder="" style="width: 30px" value="yes">
+            </div>
+
+            <div id="button">
+               <input type="submit" value="Submit"/>
+            </div>
+
+         </form>
+
+    </body>
+
+    <footer>
+        &copy; 2022-2023 &nbsp;Smug
+    </footer>
+</html>
+

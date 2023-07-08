@@ -1,0 +1,25 @@
+@charset "utf-8";
+/*
+	Author: Noor Zena;
+	Id: 60105071;
+*/ 
+*{
+   margin: 0px;
+   padding: 0px;
+   box-sizing: border-box;
+   width: 100%;
+}
+ 
+body{
+   width: 100%;
+   min-width: 800px;
+   max-width: 1200px;
+}
+
+nav ul a{
+   text-decoration: none;
+}
+ 
+nav ul{
+   list-style-type: none;
+}

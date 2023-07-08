@@ -1,0 +1,118 @@
+@charset "utf-8";
+/*
+	Author: Noor Zena;
+	Id: 60105071;
+*/ 
+
+/*index*/
+header{
+    text-align: center;
+    background-color: rgb(213, 236, 239);
+}
+header > img{
+    width: 8%;
+}
+
+header #slogan{
+    width: 1200px;
+}
+
+#main h1{
+    text-align: center;
+    text-decoration: underline;
+    color: black;
+    font-family: monospace;
+    padding-bottom: 4%;
+}
+
+h1 {
+    color: rgb(45, 75, 112);
+}
+body{
+    margin: 10px auto 10px auto; 
+    background-color: rgb(213, 236, 239);
+}
+
+nav ul li{
+    text-align: center;
+    border: 3px dashed rgb(171, 199, 222);
+    background-color: rgb(171, 199, 222);
+    padding: 8px;
+}
+nav ul li a{
+    color: white;
+    font-family: helvetica;
+}
+article {
+    text-align: left;
+    padding: 8%;
+    font-family: helvetica;
+}
+article #main {
+    text-decoration-color: black;
+    font-family: helvetica;
+
+}
+footer {
+    text-align: center;
+    border: 3px dashed rgb(171, 199, 222);
+    background-color: rgb(171, 199, 222);
+    color: white;
+    padding: 10px;
+    font-family: helvetica;
+ }
+
+ /*-------------------------------------------------------*/
+ /*products*/
+
+#mainproduct img{
+    height: 200px;
+}
+table{
+	width: 100%;
+	font-size: 100%;
+	border: 2px solid black;
+	border-collapse: collapse;
+	background: white;
+    text-align: center;
+    margin: 10px auto 10px auto;
+    table-layout: fixed;
+    height: 100%;
+}
+th, td{
+	border: 1px solid black;
+}
+thead{
+    background-color: rgb(226, 227, 222);
+}
+
+ /*-------------------------------------------------------*/
+ /*contact*/
+#contact{
+    align-items: center;
+    width: 100%;
+    margin: 10px auto 10px auto;
+
+}
+
+/*contact+subscribe*/
+form{
+	background-color: rgb(182, 203, 231);
+	border: 1px solid black;
+	margin-top: 50px;
+    margin-bottom: 50px;
+	width: 100%;
+}
+
+form > div{
+    text-align: left;
+}
+#button {
+    padding: 5px;
+}
+form > div > input{
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+}
+
+

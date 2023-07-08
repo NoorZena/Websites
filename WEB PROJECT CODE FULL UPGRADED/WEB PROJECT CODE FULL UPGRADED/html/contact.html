@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<!--
+    Author: Noor Zena
+    Id: 60105071
+-->   
+<html lang="en">
+    <head>
+        <meta charset="utf-8"/>
+        <title>Smug</title>
+        <link rel="icon" href="../images/nlogo.png">
+        <link href="../css/reset.css" rel="stylesheet" type="text/css"/>
+        <link href="../css/layout.css" rel="stylesheet" type="text/css"/>
+        <link href="../css/styles.css" rel="stylesheet" type="text/css"/>
+        <script type="text/javascript" src="../JS/contact.js" ></script>
+    </head>
+    <body>
+        <header id="header">
+            <img src="../images/nlogo.png" alt="logo"/>
+            <h1></h1>
+            <img src="../images/ii.png" alt="h" id="slogan"> 
+         </header>
+         <nav id="nav">
+            <ul>
+                <li><a href="../index.html">HOME</a></li>
+                <li><a href="products.html">PRODUCTS</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+                <li><a href="subscribe.html">SUBSCRIBE</a></li>
+            </ul>
+         </nav>
+         
+        <section class="contact">
+            
+            <!--map-->
+            <div class="maps">
+                <h1 id="headingone">Location</h1>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3606.550591570416!2d51.525793714936256!3d25.319298983839552!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e45c4c659b5f397%3A0x44063ed89ac54b05!2sTornado%20Tower!5e0!3m2!1sen!2sqa!4v1678722797986!5m2!1sen!2sqa" 
+                width="550" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+             </div>
+
+            
+
+            <div class="contactsocial">
+                <h1 class="bold">Contact</h1>
+                <img src="../images/contact.png" alt="logo"/>
+                <p>@smug.sportwear</p>
+                <br>
+                <p>address of the head office: </p>
+                <p>Tornado Tower , PO Box:2078</p>
+                <br>
+                <p>hours of operation: </p>
+                <p>8:00 AM - 12:00 AM</p>
+                <br>
+                <p>phone number: </p>
+                <p>+974 12345678</p>
+                <br>
+                <p>e-mail address of the customer service department: </p>
+                <p>smug@gmail.com</p>
+                <br>
+            </div>
+        </section>
+        <form onsubmit="return validateForm()" action="https://sit.cna-qatar.edu.qa/processform.php" method="POST">
+            <h1>DM</h1>
+            <div class="credits">
+
+                <!--name-->
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="" onblur="validateField('name')"/>
+                <br><br>
+
+                <!--text massage-->
+                <label for="textmassage">Text Message</label>
+                <input type="text" id="textmassage" name="textmassage" placeholder="" style='height: 100px;'onblur="validateField('textmassage')"/>
+                <br><br>
+
+                <!--radio button-->
+                <label for="contactMethodSelect">what is your preferred method of contact?</label>
+                <select id="contactMethodSelect" name="contactMethod">
+                    <option value="Email">Email</option>
+                    <option value="Phone Call">Phone Call</option>
+                </select>
+                <label for="contactInfoInput">Contact information:</label>
+                <input type="text" id="contactInfoInput" name="contactInfo" onblur="validateField('contactInfoInput')"><!--change type to email if wanted to choose email-->
+                <!-- <span id="EmailError"></span> -->  <!--in case email chosen-->
+                <br><br>
+
+            </div>
+            <div id="button">
+               <input type="submit" value="Send" />
+            </div>
+
+        </form>
+
+    </body>
+
+    <footer>
+        &copy; 2022-2023 &nbsp;Smug
+    </footer>
+
+</html>
